@@ -4,7 +4,15 @@ from datetime import datetime
 from urllib.parse import quote
 import os
 from dotenv import load_dotenv
+import logging
 
+# Configura logging básico
+logging.basicConfig(
+    level=logging.INFO,
+    format='[%(asctime)s] %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+logger = logging.getLogger(__name__)
 # Carrega variáveis do .env
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
@@ -30,12 +38,12 @@ class ColetorWeather:
                 if response.status_code == 200:
                     dados = response.json()
                     resultados.append(dados)
-                    print(f"[✓] Coletado: {cidade}")
+                    logger.info(f"Coletado: {cidade}")
                 else:
-                    print(f"[!] Falha em {cidade}: {response.status_code} - {response.text}")
+                    logger.warning(f"Falha em {cidade}: {response.status_code} - {response.text}")
             except Exception as e:
-                print(f"[!] Erro em {cidade}: {e}")
-        print(f"[✓] Total de cidades coletadas: {len(resultados)}")
+                logger.error(f"Erro em {cidade}: {e}")
+        logger.info(f"Total de cidades coletadas: {len(resultados)}")
         return resultados
 
     def salvar_jsons(self, dados):
@@ -58,4 +66,4 @@ class ColetorWeather:
             with open(caminho_completo, 'w', encoding='utf-8') as f:
                 json.dump(dado, f, ensure_ascii=False, indent=4)
 
-        print(f"[✓] Arquivos salvos em: {pasta_base}")
+        logger.info(f"Arquivos salvos em: {pasta_base}")

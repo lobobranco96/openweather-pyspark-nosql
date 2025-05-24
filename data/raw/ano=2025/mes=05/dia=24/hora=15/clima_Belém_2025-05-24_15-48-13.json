@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -48.5044,
+        "lat": -1.4558
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "nuvens quebradas",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 31.65,
+        "feels_like": 38.65,
+        "temp_min": 31.65,
+        "temp_max": 33.02,
+        "pressure": 1012,
+        "humidity": 73,
+        "sea_level": 1012,
+        "grnd_level": 1011
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 6.17,
+        "deg": 70
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1748101692,
+    "sys": {
+        "type": 2,
+        "id": 2093467,
+        "country": "BR",
+        "sunrise": 1748077782,
+        "sunset": 1748121143
+    },
+    "timezone": -10800,
+    "id": 3405870,
+    "name": "Belém",
+    "cod": 200
+}

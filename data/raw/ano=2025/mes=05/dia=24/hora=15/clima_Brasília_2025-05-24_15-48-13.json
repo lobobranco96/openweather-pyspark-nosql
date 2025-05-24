@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -47.9297,
+        "lat": -15.7797
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "céu limpo",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 24.54,
+        "feels_like": 24.38,
+        "temp_min": 24.51,
+        "temp_max": 26.46,
+        "pressure": 1018,
+        "humidity": 51,
+        "sea_level": 1018,
+        "grnd_level": 893
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.63,
+        "deg": 110
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1748101691,
+    "sys": {
+        "type": 1,
+        "id": 8336,
+        "country": "BR",
+        "sunrise": 1748078983,
+        "sunset": 1748119666
+    },
+    "timezone": -10800,
+    "id": 3469058,
+    "name": "Brasília",
+    "cod": 200
+}

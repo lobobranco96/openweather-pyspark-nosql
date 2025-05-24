@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -49.2539,
+        "lat": -16.6786
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "céu limpo",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 27.83,
+        "feels_like": 27.79,
+        "temp_min": 27.83,
+        "temp_max": 27.83,
+        "pressure": 1018,
+        "humidity": 44,
+        "sea_level": 1018,
+        "grnd_level": 929
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.63,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1748101692,
+    "sys": {
+        "type": 1,
+        "id": 8372,
+        "country": "BR",
+        "sunrise": 1748079389,
+        "sunset": 1748119895
+    },
+    "timezone": -10800,
+    "id": 3462377,
+    "name": "Goiânia",
+    "cod": 200
+}
