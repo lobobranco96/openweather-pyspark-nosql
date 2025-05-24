@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -56.0967,
+        "lat": -15.5961
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "céu limpo",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 21.96,
+        "feels_like": 22.38,
+        "temp_min": 21.96,
+        "temp_max": 21.96,
+        "pressure": 1017,
+        "humidity": 83,
+        "sea_level": 1017,
+        "grnd_level": 996
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 310
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1748090792,
+    "sys": {
+        "type": 1,
+        "id": 8352,
+        "country": "BR",
+        "sunrise": 1748080925,
+        "sunset": 1748121644
+    },
+    "timezone": -14400,
+    "id": 3465038,
+    "name": "Cuiabá",
+    "cod": 200
+}

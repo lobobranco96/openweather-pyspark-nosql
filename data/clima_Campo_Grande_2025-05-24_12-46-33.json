@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -54.6464,
+        "lat": -20.4428
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "céu limpo",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 22.75,
+        "feels_like": 22.54,
+        "temp_min": 22.75,
+        "temp_max": 22.75,
+        "pressure": 1020,
+        "humidity": 56,
+        "sea_level": 1020,
+        "grnd_level": 956
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 6.17,
+        "deg": 60
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1748090686,
+    "sys": {
+        "type": 1,
+        "id": 8347,
+        "country": "BR",
+        "sunrise": 1748081064,
+        "sunset": 1748120809
+    },
+    "timezone": -14400,
+    "id": 3467747,
+    "name": "Campo Grande",
+    "cod": 200
+}

@@ -1,0 +1,48 @@
+{
+    "coord": {
+        "lon": -60.025,
+        "lat": -3.1019
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "chuva fraca",
+            "icon": "10d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 26.27,
+        "feels_like": 26.27,
+        "temp_min": 26.27,
+        "temp_max": 26.28,
+        "pressure": 1015,
+        "humidity": 83,
+        "sea_level": 1015,
+        "grnd_level": 1011
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.57,
+        "deg": 80
+    },
+    "rain": {
+        "1h": 0.27
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1748090791,
+    "sys": {
+        "type": 1,
+        "id": 8412,
+        "country": "BR",
+        "sunrise": 1748080698,
+        "sunset": 1748123757
+    },
+    "timezone": -14400,
+    "id": 3663517,
+    "name": "Manaus",
+    "cod": 200
+}

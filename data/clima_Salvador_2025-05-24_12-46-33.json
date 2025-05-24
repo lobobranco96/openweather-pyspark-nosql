@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": -38.5108,
+        "lat": -12.9711
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "céu limpo",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 26.98,
+        "feels_like": 29.6,
+        "temp_min": 26.98,
+        "temp_max": 26.98,
+        "pressure": 1019,
+        "humidity": 79,
+        "sea_level": 1019,
+        "grnd_level": 1018
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.03,
+        "deg": 138,
+        "gust": 4.63
+    },
+    "clouds": {
+        "all": 7
+    },
+    "dt": 1748090791,
+    "sys": {
+        "type": 1,
+        "id": 8454,
+        "country": "BR",
+        "sunrise": 1748076450,
+        "sunset": 1748117677
+    },
+    "timezone": -10800,
+    "id": 3450554,
+    "name": "Salvador",
+    "cod": 200
+}
