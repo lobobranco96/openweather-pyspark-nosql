@@ -1,7 +1,7 @@
 {
     "coord": {
-        "lon": -38.5247,
-        "lat": -3.7227
+        "lon": -44.3028,
+        "lat": -2.5297
     },
     "weather": [
         {
@@ -13,33 +13,33 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 29.07,
-        "feels_like": 35.85,
-        "temp_min": 29.07,
-        "temp_max": 29.07,
-        "pressure": 1015,
-        "humidity": 84,
-        "sea_level": 1015,
+        "temp": 31.11,
+        "feels_like": 37.9,
+        "temp_min": 31.11,
+        "temp_max": 31.11,
+        "pressure": 1014,
+        "humidity": 70,
+        "sea_level": 1014,
         "grnd_level": 1013
     },
     "visibility": 10000,
     "wind": {
-        "speed": 6.69,
-        "deg": 110
+        "speed": 6.17,
+        "deg": 60
     },
     "clouds": {
         "all": 40
     },
-    "dt": 1748090791,
+    "dt": 1748095213,
     "sys": {
         "type": 1,
-        "id": 8363,
+        "id": 8440,
         "country": "BR",
-        "sunrise": 1748075594,
-        "sunset": 1748118540
+        "sunrise": 1748076872,
+        "sunset": 1748120036
     },
     "timezone": -10800,
-    "id": 6320062,
-    "name": "Fortaleza",
+    "id": 3388368,
+    "name": "São Luís",
     "cod": 200
 }

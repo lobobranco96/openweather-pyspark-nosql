@@ -14,6 +14,11 @@ class ColetorWeather:
         self.cidades = cidades
         self.api_key = API_KEY
         self.base_url = "http://api.openweathermap.org/data/2.5/weather"
+        
+        # Define pasta base absoluta (2 níveis acima + /data/raw)
+        self.base_path = os.path.abspath(
+            os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw")
+        )
 
     def coletar(self):
         resultados = []
@@ -27,15 +32,30 @@ class ColetorWeather:
                     resultados.append(dados)
                     print(f"[✓] Coletado: {cidade}")
                 else:
-                    print(f"[!] Falha em {cidade}: {response.status_code}")
+                    print(f"[!] Falha em {cidade}: {response.status_code} - {response.text}")
             except Exception as e:
                 print(f"[!] Erro em {cidade}: {e}")
+        print(f"[✓] Total de cidades coletadas: {len(resultados)}")
         return resultados
 
-    def salvar_jsons(self, dados, pasta='dados_json'):
+    def salvar_jsons(self, dados):
+        now = datetime.now()
+        pasta_base = os.path.join(
+            self.base_path,
+            f"ano={now.year}",
+            f"mes={now.month:02d}",
+            f"dia={now.day:02d}",
+            f"hora={now.hour:02d}"
+        )
+        os.makedirs(pasta_base, exist_ok=True)
+
         for dado in dados:
             cidade = dado.get('name', 'desconhecida').replace(" ", "_")
-            timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-            nome_arquivo = f"data/clima_{cidade}_{timestamp}.json"
-            with open(nome_arquivo, 'w', encoding='utf-8') as f:
+            timestamp = now.strftime('%Y-%m-%d_%H-%M-%S')
+            nome_arquivo = f"clima_{cidade}_{timestamp}.json"
+            caminho_completo = os.path.join(pasta_base, nome_arquivo)
+
+            with open(caminho_completo, 'w', encoding='utf-8') as f:
                 json.dump(dado, f, ensure_ascii=False, indent=4)
+
+        print(f"[✓] Arquivos salvos em: {pasta_base}")

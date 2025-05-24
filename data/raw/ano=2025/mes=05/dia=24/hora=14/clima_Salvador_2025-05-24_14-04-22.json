@@ -5,33 +5,33 @@
     },
     "weather": [
         {
-            "id": 800,
-            "main": "Clear",
-            "description": "céu limpo",
-            "icon": "01d"
+            "id": 802,
+            "main": "Clouds",
+            "description": "nuvens dispersas",
+            "icon": "03d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 26.98,
-        "feels_like": 29.6,
-        "temp_min": 26.98,
-        "temp_max": 26.98,
+        "temp": 25.98,
+        "feels_like": 25.98,
+        "temp_min": 25.98,
+        "temp_max": 25.98,
         "pressure": 1019,
-        "humidity": 79,
+        "humidity": 75,
         "sea_level": 1019,
         "grnd_level": 1018
     },
     "visibility": 10000,
     "wind": {
-        "speed": 4.03,
-        "deg": 138,
-        "gust": 4.63
+        "speed": 4.72,
+        "deg": 146,
+        "gust": 5.29
     },
     "clouds": {
-        "all": 7
+        "all": 33
     },
-    "dt": 1748090791,
+    "dt": 1748095214,
     "sys": {
         "type": 1,
         "id": 8454,

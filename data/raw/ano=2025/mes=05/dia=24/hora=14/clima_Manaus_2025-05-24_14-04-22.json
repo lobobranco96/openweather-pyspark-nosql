@@ -5,35 +5,32 @@
     },
     "weather": [
         {
-            "id": 500,
-            "main": "Rain",
-            "description": "chuva fraca",
-            "icon": "10d"
+            "id": 803,
+            "main": "Clouds",
+            "description": "nuvens quebradas",
+            "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 26.27,
-        "feels_like": 26.27,
-        "temp_min": 26.27,
-        "temp_max": 26.28,
-        "pressure": 1015,
+        "temp": 27.27,
+        "feels_like": 30.69,
+        "temp_min": 27.27,
+        "temp_max": 27.28,
+        "pressure": 1016,
         "humidity": 83,
-        "sea_level": 1015,
-        "grnd_level": 1011
+        "sea_level": 1016,
+        "grnd_level": 1010
     },
     "visibility": 10000,
     "wind": {
         "speed": 2.57,
-        "deg": 80
-    },
-    "rain": {
-        "1h": 0.27
+        "deg": 40
     },
     "clouds": {
-        "all": 40
+        "all": 75
     },
-    "dt": 1748090791,
+    "dt": 1748095460,
     "sys": {
         "type": 1,
         "id": 8412,

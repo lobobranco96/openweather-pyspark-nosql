@@ -1,7 +1,7 @@
 {
     "coord": {
-        "lon": -44.3028,
-        "lat": -2.5297
+        "lon": -35.2094,
+        "lat": -5.795
     },
     "weather": [
         {
@@ -13,33 +13,33 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 30.11,
-        "feels_like": 36.33,
-        "temp_min": 30.11,
-        "temp_max": 30.11,
+        "temp": 29.12,
+        "feels_like": 32.99,
+        "temp_min": 29.12,
+        "temp_max": 29.36,
         "pressure": 1015,
-        "humidity": 74,
+        "humidity": 70,
         "sea_level": 1015,
-        "grnd_level": 1013
+        "grnd_level": 1012
     },
     "visibility": 10000,
     "wind": {
-        "speed": 6.17,
-        "deg": 80
+        "speed": 4.63,
+        "deg": 160
     },
     "clouds": {
         "all": 40
     },
-    "dt": 1748090791,
+    "dt": 1748095461,
     "sys": {
         "type": 1,
-        "id": 8440,
+        "id": 8417,
         "country": "BR",
-        "sunrise": 1748076872,
-        "sunset": 1748120036
+        "sunrise": 1748074988,
+        "sunset": 1748117555
     },
     "timezone": -10800,
-    "id": 3388368,
-    "name": "São Luís",
+    "id": 3394023,
+    "name": "Natal",
     "cod": 200
 }

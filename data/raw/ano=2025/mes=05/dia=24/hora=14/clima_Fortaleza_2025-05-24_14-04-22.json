@@ -1,7 +1,7 @@
 {
     "coord": {
-        "lon": -35.2094,
-        "lat": -5.795
+        "lon": -38.5247,
+        "lat": -3.7227
     },
     "weather": [
         {
@@ -13,33 +13,33 @@
     ],
     "base": "stations",
     "main": {
-        "temp": 29.12,
-        "feels_like": 32.99,
-        "temp_min": 28.36,
-        "temp_max": 29.12,
+        "temp": 31.07,
+        "feels_like": 36.61,
+        "temp_min": 31.07,
+        "temp_max": 31.07,
         "pressure": 1015,
-        "humidity": 70,
+        "humidity": 66,
         "sea_level": 1015,
         "grnd_level": 1012
     },
     "visibility": 10000,
     "wind": {
-        "speed": 5.14,
-        "deg": 150
+        "speed": 7.2,
+        "deg": 120
     },
     "clouds": {
         "all": 40
     },
-    "dt": 1748090792,
+    "dt": 1748095206,
     "sys": {
         "type": 1,
-        "id": 8417,
+        "id": 8363,
         "country": "BR",
-        "sunrise": 1748074988,
-        "sunset": 1748117555
+        "sunrise": 1748075594,
+        "sunset": 1748118540
     },
     "timezone": -10800,
-    "id": 3394023,
-    "name": "Natal",
+    "id": 6320062,
+    "name": "Fortaleza",
     "cod": 200
 }
