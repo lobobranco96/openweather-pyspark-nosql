@@ -1,0 +1,61 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:6
+    ports:
+      - "6379:6379"
+
+  airflow-webserver:
+    build: ../docker/airflow
+    environment:
+      - LOAD_AIRFLOW=TRUE
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__WEBSERVER__RBAC=True
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - redis
+    command: ["bash", "-c", "airflow db init && airflow webserver"]
+
+  airflow-scheduler:
+    environment:
+      - LOAD_AIRFLOW=TRUE
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+    depends_on:
+      - postgres
+      - redis
+    command: ["bash", "-c", "airflow scheduler"]
+
+  airflow-worker:
+    environment:
+      - LOAD_AIRFLOW=TRUE
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+    depends_on:
+      - postgres
+      - redis
+    command: ["bash", "-c", "airflow worker"]
+
+  airflow-init:
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+    entrypoint: ["bash", "-c", "airflow db init"]
+
+  networks:
+  - nosql_pipeline_network
+
+networks:
+  nosql_pipeline_network:
+    name: nosql_pipeline_network

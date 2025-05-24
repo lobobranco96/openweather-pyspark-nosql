@@ -1,2 +1,5 @@
-requests
+jupyter
+pandas
+pymongo
 python-dotenv
+pyspark

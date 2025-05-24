@@ -67,3 +67,4 @@ class ColetorWeather:
                 json.dump(dado, f, ensure_ascii=False, indent=4)
 
         logger.info(f"Arquivos salvos em: {pasta_base}")
+        return pasta_base

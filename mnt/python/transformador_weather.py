@@ -47,5 +47,21 @@ class TransformadorClima:
         })
 
     def salvar_parquet(self, df):
+        """
+        Salva o DataFrame transformado como Parquet
+        Retorna o caminho onde o arquivo Parquet foi salvo
+        """
         now = datetime.now()
-        pasta_base = os.path.join(
+        path_base = os.path.join(
+            self.base_path,
+            f"ano={now.year}",
+            f"mes={now.month:02d}",
+            f"dia={now.day:02d}",
+            f"hora={now.hour:02d}"
+        )
+        os.makedirs(path_base, exist_ok=True)
+
+        df.write.mode("overwrite").parquet(path_base)
+        self.spark.stop()
+        logger.info(f"Dados salvos em: {path_base}")
+        return path_base

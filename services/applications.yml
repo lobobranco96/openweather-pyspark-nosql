@@ -1,0 +1,19 @@
+ services:
+  notebook:
+    build: ../docker/notebook
+    container_name: notebook
+    restart: always
+    volumes:
+      - ./mnt/notebook:/home/jovyan/work
+      - ./mnt/python:/home/jovyan/python
+      - ./data:/home/jovyan/data
+      - ./.env:/home/jovyan/.env
+    ports:
+      - "8888:8888"
+
+  networks:
+  - nosql_pipeline_network
+  
+networks:
+  nosql_pipeline_network:
+    name: nosql_pipeline_network
