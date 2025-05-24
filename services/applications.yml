@@ -1,18 +1,17 @@
- services:
+x-common-log-config: &default_config
+  networks:
+    - nosql_pipeline_network
+
+services:
   notebook:
     build: ../docker/notebook
     container_name: notebook
+    <<: *default_config
     restart: always
     volumes:
-      - ./mnt/notebook:/home/jovyan/work
-      - ./mnt/python:/home/jovyan/python
-      - ./data:/home/jovyan/data
-      - ./.env:/home/jovyan/.env
+      - ../mnt/notebooks:/app/
     ports:
       - "8888:8888"
-
-  networks:
-  - nosql_pipeline_network
   
 networks:
   nosql_pipeline_network:

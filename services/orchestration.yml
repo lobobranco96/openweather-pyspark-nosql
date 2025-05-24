@@ -1,7 +1,13 @@
 version: '3'
+
+x-common-log-config: &default_config
+  networks:
+    - nosql_pipeline_network
+
 services:
   postgres:
     image: postgres:13
+    <<: *default_config
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
@@ -11,11 +17,13 @@ services:
 
   redis:
     image: redis:6
+    <<: *default_config
     ports:
       - "6379:6379"
 
   airflow-webserver:
     build: ../docker/airflow
+    <<: *default_config
     environment:
       - LOAD_AIRFLOW=TRUE
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
@@ -29,6 +37,7 @@ services:
     command: ["bash", "-c", "airflow db init && airflow webserver"]
 
   airflow-scheduler:
+    <<: *default_config
     environment:
       - LOAD_AIRFLOW=TRUE
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
@@ -39,6 +48,7 @@ services:
     command: ["bash", "-c", "airflow scheduler"]
 
   airflow-worker:
+    <<: *default_config
     environment:
       - LOAD_AIRFLOW=TRUE
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
@@ -49,12 +59,11 @@ services:
     command: ["bash", "-c", "airflow worker"]
 
   airflow-init:
+    <<: *default_config
     environment:
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
     entrypoint: ["bash", "-c", "airflow db init"]
 
-  networks:
-  - nosql_pipeline_network
 
 networks:
   nosql_pipeline_network:
