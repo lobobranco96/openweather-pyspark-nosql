@@ -18,15 +18,16 @@ ENV PATH="$JAVA_HOME/bin:$PATH"
 ENV PYSPARK_PYTHON=python3
 ENV PYSPARK_DRIVER_PYTHON=python3
 
-# Instalar PySpark + dependências do projeto
-COPY requirements.txt .
 
-# Muda para usuário airflow para instalar pacotes
 USER airflow
 
+# Instalar dependências Python
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Corrigir permissões de tudo que está dentro de /opt/airflow
 #USER root
-# Corrigir permissões para o usuário airflow
 #RUN chown -R airflow:airflow /opt/airflow
 
+# Deixa o container rodar como usuário airflow
+#USER airflow

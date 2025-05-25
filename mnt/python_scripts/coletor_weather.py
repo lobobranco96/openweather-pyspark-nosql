@@ -25,7 +25,7 @@ class ColetorWeather:
         
         # Define pasta base absoluta (2 níveis acima + /data/raw)
         self.base_path = os.path.abspath(
-            os.path.join(os.path.dirname(__file__), "..", "..", "storage_data", "raw")
+            os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw")
         )
 
     def coletar(self):

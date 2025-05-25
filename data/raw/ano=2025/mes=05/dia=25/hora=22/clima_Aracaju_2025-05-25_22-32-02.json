@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -37.0717,
+        "lat": -10.9111
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "céu pouco nublado",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 25.97,
+        "feels_like": 25.97,
+        "temp_min": 25.97,
+        "temp_max": 25.97,
+        "pressure": 1017,
+        "humidity": 73,
+        "sea_level": 1017,
+        "grnd_level": 1016
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 150
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1748212319,
+    "sys": {
+        "type": 1,
+        "id": 8322,
+        "country": "BR",
+        "sunrise": 1748162325,
+        "sunset": 1748203924
+    },
+    "timezone": -10800,
+    "id": 3471872,
+    "name": "Aracaju",
+    "cod": 200
+}

@@ -1,0 +1,48 @@
+{
+    "coord": {
+        "lon": -47.9297,
+        "lat": -15.7797
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "chuva fraca",
+            "icon": "10n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 21.51,
+        "feels_like": 21.18,
+        "temp_min": 18.12,
+        "temp_max": 21.51,
+        "pressure": 1019,
+        "humidity": 56,
+        "sea_level": 1019,
+        "grnd_level": 892
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.57,
+        "deg": 150
+    },
+    "rain": {
+        "1h": 0.12
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1748212276,
+    "sys": {
+        "type": 1,
+        "id": 8336,
+        "country": "BR",
+        "sunrise": 1748165403,
+        "sunset": 1748206058
+    },
+    "timezone": -10800,
+    "id": 3469058,
+    "name": "Brasília",
+    "cod": 200
+}

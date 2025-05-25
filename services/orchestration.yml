@@ -25,7 +25,7 @@ x-airflow-common: &airflow-common
     - ../mnt/airflow/logs:/opt/airflow/logs
     - ../mnt/airflow/plugins:/opt/airflow/plugins
     - ../mnt/python_scripts:/opt/airflow/python_scripts
-    - ../data:/opt/airflow/storage_data
+    - ../data:/opt/data
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
