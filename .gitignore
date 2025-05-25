@@ -10,3 +10,4 @@ logs/
 Thumbs.db
 info.txt
 README.txt
+mnt/python/__pycache__/

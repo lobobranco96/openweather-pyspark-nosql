@@ -1,26 +1,28 @@
 FROM python:3.8-slim
 
+WORKDIR /app
+USER root
+
 # Instalar dependências de sistema
 RUN apt-get update && apt-get install -y \
-    openjdk-11-jdk \
     curl \
     git \
-    && apt-get clean
+    default-jdk \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Variáveis de ambiente do Java/Spark
-ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+ENV PATH="$JAVA_HOME/bin:$PATH"
 ENV PYSPARK_PYTHON=python3
 ENV PYSPARK_DRIVER_PYTHON=python3
 
+
 # Instalar Jupyter e bibliotecas Python
-COPY docker/notebook/requirements.txt /tmp/requirements.txt
-RUN pip install --no-cache-dir -r /tmp/requirements.txt
+#docker/notebook/
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Criar pasta de trabalho
-WORKDIR /home/jovyan
-
-# Expor a porta padrão do Jupyter
-EXPOSE 8888
 
 # Entrypoint
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root",  "--NotebookApp.token=''"]
