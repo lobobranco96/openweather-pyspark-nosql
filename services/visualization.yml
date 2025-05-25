@@ -1,0 +1,17 @@
+x-common-log-config: &default_config
+  networks:
+    - nosql_pipeline_network
+
+services:
+  streamlit:
+    build: ../docker/streamlit
+    env_file:
+      - .env
+    container_name: streamlit_app
+    <<: *default_config
+    ports:
+      - "8501:8501"
+
+networks:
+  nosql_pipeline_network:
+    name: nosql_pipeline_network
