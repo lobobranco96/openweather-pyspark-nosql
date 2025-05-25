@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -35.2094,
+        "lat": -5.795
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "céu pouco nublado",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 26.12,
+        "feels_like": 26.12,
+        "temp_min": 24.36,
+        "temp_max": 26.12,
+        "pressure": 1015,
+        "humidity": 83,
+        "sea_level": 1015,
+        "grnd_level": 1013
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 150
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1748214005,
+    "sys": {
+        "type": 1,
+        "id": 8417,
+        "country": "BR",
+        "sunrise": 1748161399,
+        "sunset": 1748203956
+    },
+    "timezone": -10800,
+    "id": 3394023,
+    "name": "Natal",
+    "cod": 200
+}

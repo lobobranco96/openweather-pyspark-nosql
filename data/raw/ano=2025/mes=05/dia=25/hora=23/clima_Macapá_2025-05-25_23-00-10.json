@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -51.0664,
+        "lat": 0.0389
+    },
+    "weather": [
+        {
+            "id": 211,
+            "main": "Thunderstorm",
+            "description": "trovoada",
+            "icon": "11n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 29.99,
+        "feels_like": 36.99,
+        "temp_min": 29.99,
+        "temp_max": 29.99,
+        "pressure": 1012,
+        "humidity": 79,
+        "sea_level": 1012,
+        "grnd_level": 1011
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 110
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1748213870,
+    "sys": {
+        "type": 1,
+        "id": 8415,
+        "country": "BR",
+        "sunrise": 1748164666,
+        "sunset": 1748208301
+    },
+    "timezone": -10800,
+    "id": 3396016,
+    "name": "Macapá",
+    "cod": 200
+}

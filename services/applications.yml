@@ -12,7 +12,7 @@ services:
       - .env
     volumes:
       - ../mnt/notebook:/app/
-      - ../mnt/python:/app/python/
+      - ../mnt/python_scripts:/app/python/
     ports:
       - "8888:8888"
 

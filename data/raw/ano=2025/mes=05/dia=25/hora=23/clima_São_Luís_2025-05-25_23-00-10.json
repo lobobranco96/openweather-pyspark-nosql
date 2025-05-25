@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -44.3028,
+        "lat": -2.5297
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "nuvens dispersas",
+            "icon": "03n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 27.11,
+        "feels_like": 31.51,
+        "temp_min": 27.11,
+        "temp_max": 27.11,
+        "pressure": 1012,
+        "humidity": 94,
+        "sea_level": 1012,
+        "grnd_level": 1011
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 60
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1748214005,
+    "sys": {
+        "type": 1,
+        "id": 8440,
+        "country": "BR",
+        "sunrise": 1748163280,
+        "sunset": 1748206440
+    },
+    "timezone": -10800,
+    "id": 3388368,
+    "name": "São Luís",
+    "cod": 200
+}

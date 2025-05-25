@@ -21,7 +21,7 @@ default_args = {
 }
 
 with DAG(
-    'load_weather_data',
+    'pipeline_etl_weather_api',
     default_args=default_args,
     description='Pipeline de extração, transformação e carga de dados do clima para o MongoDB',
     schedule_interval='@hourly',
@@ -68,7 +68,7 @@ with DAG(
         mongo_loader.escrever_mongodb(df)
         mongo_loader.stop()
 
-    # Encadeando as tarefas usando a API TaskFlow
+    # tarefas usando a API TaskFlow
     data_path = extract()
     parquet_path = transform(data_path)
     load_data_to_mongo(parquet_path)

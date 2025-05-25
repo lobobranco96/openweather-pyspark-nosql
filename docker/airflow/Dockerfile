@@ -25,9 +25,3 @@ USER airflow
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Corrigir permissões de tudo que está dentro de /opt/airflow
-#USER root
-#RUN chown -R airflow:airflow /opt/airflow
-
-# Deixa o container rodar como usuário airflow
-#USER airflow

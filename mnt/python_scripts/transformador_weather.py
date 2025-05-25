@@ -13,12 +13,14 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class TransformadorClima:
-    def __init__(self, base_path="data/processed"):
-        self.base_path = base_path
+    def __init__(self):
         self.spark = SparkSession.builder \
                     .appName("TransformadorClima") \
                     .getOrCreate()
 
+        self.base_path = os.path.abspath(
+            os.path.join(os.path.dirname(__file__), "..", "..", "data", "processed")
+        )
     def ler_json(self, caminho_json):
         return self.spark.read.option("multiline", "true").json(caminho_json)
 
