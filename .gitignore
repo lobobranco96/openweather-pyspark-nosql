@@ -13,3 +13,4 @@ README.txt
 mnt/python/__pycache__/
 services/.env
 inicializador.txt
+.env
