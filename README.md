@@ -16,6 +16,59 @@ Este projeto realiza a ingestão, transformação e disponibilização de dados 
 
 ---
 
+```lua
+/openweather-pyspark-nosql
+├── data
+│   ├── processed
+│   │   └── ano=2025
+│   └── raw
+│       └── ano=2025
+├── docker
+│   ├── airflow
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   ├── notebook
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   └── streamlit
+│       ├── app.py
+│       ├── app_teste.py
+│       ├── Dockerfile
+│       └── requirements.txt
+├── docs
+│   ├── arquitetura.png
+│   ├── extract_task.jpg
+│   ├── load_task.jpg
+│   ├── mongodb_clima.jpg
+│   ├── mongodb.jpg
+│   ├── streamlit_dashboard1.jpg
+│   ├── streamlit_dashboard2.jpg
+│   ├── streamlit_dashboard.jpg
+│   └── transform_task.jpg
+├── info.txt
+├── makefile
+├── mnt
+│   ├── airflow
+│   │   └── dags
+│   ├── notebook
+│   │   ├── notebook_teste.ipynb
+│   │   ├── query_mongo_data.ipynb
+│   │   └── teste_pyspark.ipynb
+│   ├── python
+│   │   └── __pycache__
+│   └── python_scripts
+│       ├── coletor_weather.py
+│       ├── __init__.py
+│       ├── load_weather_mongo.py
+│       └── transformador_weather.py
+├── README.md
+├── services
+│   ├── applications.yml
+│   ├── orchestration.yml
+│   └── visualization.yml
+└── tests
+    └── app.py
+```
 ## 🔄 Fluxo de dados
 
 O pipeline segue a abordagem de **ETL (Extract, Transform, Load)**:
