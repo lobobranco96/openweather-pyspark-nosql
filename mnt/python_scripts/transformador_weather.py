@@ -1,3 +1,12 @@
+"""
+Módulo de transformação de dados meteorológicos com PySpark.
+
+Este script define a classe `TransformadorClima`, responsável por:
+- Ler arquivos JSON contendo dados brutos de clima.
+- Realizar transformações e enriquecimentos nos dados.
+- Salvar os resultados como arquivos Parquet organizados por data/hora.
+"""
+
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, from_unixtime, when, current_timestamp
 import os
@@ -12,19 +21,60 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
 class TransformadorClima:
+    """
+    Classe responsável por transformar dados meteorológicos com PySpark.
+
+    Funcionalidades:
+    - Leitura de arquivos JSON.
+    - Transformações e enriquecimentos (e.g., faixas de temperatura).
+    - Salvamento dos dados em formato Parquet, organizados por data e hora.
+
+    Attributes:
+        spark (SparkSession): Sessão Spark para transformação.
+        base_path (str): Caminho base para salvar os arquivos transformados.
+    """
+
     def __init__(self):
+        """Inicializa a sessão Spark e define o diretório base de saída."""
         self.spark = SparkSession.builder \
-                    .appName("TransformadorClima") \
-                    .getOrCreate()
+            .appName("TransformadorClima") \
+            .getOrCreate()
 
         self.base_path = os.path.abspath(
             os.path.join(os.path.dirname(__file__), "..", "..", "data", "processed")
         )
+
     def ler_json(self, caminho_json):
+        """
+        Lê os arquivos JSON de entrada.
+
+        Args:
+            caminho_json (str): Caminho para os arquivos JSON coletados.
+
+        Returns:
+            DataFrame: DataFrame Spark com os dados lidos.
+        """
         return self.spark.read.option("multiline", "true").json(caminho_json)
 
     def transformar(self, df):
+        """
+        Aplica transformações nos dados brutos.
+
+        Operações realizadas:
+        - Seleção e renomeação de colunas.
+        - Conversão de timestamp Unix.
+        - Classificação por faixa de temperatura.
+        - Preenchimento de valores nulos.
+        - Filtragem de dados inválidos.
+
+        Args:
+            df (DataFrame): DataFrame com dados brutos.
+
+        Returns:
+            DataFrame: DataFrame transformado.
+        """
         return df.select(
             col("name").alias("cidade"),
             col("dt").alias("timestamp"),
@@ -50,8 +100,13 @@ class TransformadorClima:
 
     def salvar_parquet(self, df):
         """
-        Salva o DataFrame transformado como Parquet
-        Retorna o caminho onde o arquivo Parquet foi salvo
+        Salva o DataFrame transformado em arquivos Parquet particionados por data e hora.
+
+        Args:
+            df (DataFrame): DataFrame transformado a ser salvo.
+
+        Returns:
+            str: Caminho onde os arquivos Parquet foram salvos.
         """
         now = datetime.now()
         path_base = os.path.join(

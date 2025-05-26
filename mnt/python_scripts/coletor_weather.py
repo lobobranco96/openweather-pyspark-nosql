@@ -1,3 +1,11 @@
+"""
+Módulo de coleta de dados climáticos da API OpenWeather.
+
+Este script define a classe `ColetorWeather`, responsável por:
+- Coletar dados meteorológicos atuais para uma lista de cidades.
+- Salvar os dados coletados em arquivos JSON organizados por ano, mês, dia e hora.
+"""
+
 import requests
 import json
 from datetime import datetime
@@ -13,22 +21,45 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 logger = logging.getLogger(__name__)
-# Carrega variáveis do .env
+
+# Carrega variáveis do arquivo .env
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 
+
 class ColetorWeather:
+    """
+    Classe responsável por coletar dados meteorológicos da API OpenWeather
+    e armazená-los em arquivos JSON organizados por data/hora.
+
+    Attributes:
+        cidades (list): Lista de nomes de cidades para coleta dos dados.
+        api_key (str): Chave da API OpenWeather.
+        base_url (str): URL base da API.
+        base_path (str): Caminho base para salvar os arquivos JSON.
+    """
+
     def __init__(self, cidades):
+        """
+        Inicializa o ColetorWeather com a lista de cidades.
+
+        Args:
+            cidades (list): Lista com os nomes das cidades (ex: ['São Paulo', 'Rio de Janeiro']).
+        """
         self.cidades = cidades
         self.api_key = API_KEY
         self.base_url = "http://api.openweathermap.org/data/2.5/weather"
-        
-        # Define pasta base absoluta (2 níveis acima + /data/raw)
         self.base_path = os.path.abspath(
             os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw")
         )
 
     def coletar(self):
+        """
+        Realiza a coleta de dados meteorológicos para todas as cidades definidas.
+
+        Returns:
+            list: Lista de dicionários JSON com os dados retornados pela API.
+        """
         resultados = []
         for cidade in self.cidades:
             cidade_encoded = quote(cidade)
@@ -47,6 +78,15 @@ class ColetorWeather:
         return resultados
 
     def salvar_jsons(self, dados):
+        """
+        Salva os dados coletados em arquivos JSON organizados por data/hora.
+
+        Args:
+            dados (list): Lista de dicionários contendo os dados das cidades.
+
+        Returns:
+            str: Caminho completo da pasta onde os arquivos foram salvos.
+        """
         now = datetime.now()
         pasta_base = os.path.join(
             self.base_path,
