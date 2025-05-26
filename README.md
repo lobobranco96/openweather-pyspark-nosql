@@ -19,10 +19,20 @@ Este projeto realiza a ingestão, transformação e disponibilização de dados 
 ```lua
 /openweather-pyspark-nosql
 ├── data
-│   ├── processed
-│   │   └── ano=2025
-│   └── raw
-│       └── ano=2025
+├── processed
+│   └── ano=2025
+│       └── mes=05
+│           ├── dia=24
+│           │   └── hora=15
+│           └── dia=25
+│               ├── hora=22
+│               └── hora=23
+└── raw
+|   └── ano=2025
+|       └── mes=05
+|           └── dia=25
+|               ├── hora=22
+|               └── hora=23
 ├── docker
 │   ├── airflow
 │   │   ├── Dockerfile
@@ -113,6 +123,14 @@ O pipeline segue a abordagem de **ETL (Extract, Transform, Load)**:
 | Jupyter     | Testes e análise exploratória             |
 
 ---
+
+### Variáveis exigidas
+Este projeto depende de algumas credenciais sensíveis que devem ser configuradas por meio de variáveis de ambiente. Essas variáveis são carregadas automaticamente a partir de um arquivo .env localizado no services/.env
+
+| Variável             | Descrição                                                                 | Onde utilizar                    |
+|----------------------|---------------------------------------------------------------------------|----------------------------------|
+| `OPENWEATHER_API_KEY`| Chave da API da [OpenWeather](https://home.openweathermap.org/api_keys)  | Utilizada na etapa de extração   |
+| `MONGO_URI`          | URI de conexão com o MongoDB (ex: `mongodb://user:pass@host:port/db`)     | Utilizada na etapa de carga (`LoadMongo`) |
 
 ## 🐳 Execução com Makefile e Docker
 
