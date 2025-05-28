@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -34.8631,
+        "lat": -7.115
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "nuvens quebradas",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 29.13,
+        "feels_like": 32.09,
+        "temp_min": 29.13,
+        "temp_max": 29.13,
+        "pressure": 1017,
+        "humidity": 65,
+        "sea_level": 1017,
+        "grnd_level": 1013
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 130
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1748437671,
+    "sys": {
+        "type": 1,
+        "id": 8391,
+        "country": "BR",
+        "sunrise": 1748420676,
+        "sunset": 1748462955
+    },
+    "timezone": -10800,
+    "id": 3397277,
+    "name": "João Pessoa",
+    "cod": 200
+}

@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -42.8019,
+        "lat": -5.0892
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "céu pouco nublado",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 31.84,
+        "feels_like": 34.31,
+        "temp_min": 31.84,
+        "temp_max": 31.84,
+        "pressure": 1014,
+        "humidity": 51,
+        "sea_level": 1014,
+        "grnd_level": 1002
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 130
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1748444708,
+    "sys": {
+        "type": 1,
+        "id": 8447,
+        "country": "BR",
+        "sunrise": 1748422389,
+        "sunset": 1748465053
+    },
+    "timezone": -10800,
+    "id": 3386496,
+    "name": "Teresina",
+    "cod": 200
+}

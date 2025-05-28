@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -34.8811,
+        "lat": -8.0539
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "nuvens dispersas",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 29.02,
+        "feels_like": 33.54,
+        "temp_min": 29.02,
+        "temp_max": 29.02,
+        "pressure": 1017,
+        "humidity": 74,
+        "sea_level": 1017,
+        "grnd_level": 1014
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.63,
+        "deg": 150
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1748441099,
+    "sys": {
+        "type": 1,
+        "id": 8426,
+        "country": "BR",
+        "sunrise": 1748420770,
+        "sunset": 1748462869
+    },
+    "timezone": -10800,
+    "id": 3390760,
+    "name": "Recife",
+    "cod": 200
+}

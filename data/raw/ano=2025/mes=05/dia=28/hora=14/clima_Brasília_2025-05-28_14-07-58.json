@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": -47.9297,
+        "lat": -15.7797
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "nublado",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 24.23,
+        "feels_like": 24.41,
+        "temp_min": 24.23,
+        "temp_max": 25.03,
+        "pressure": 1018,
+        "humidity": 65,
+        "sea_level": 1018,
+        "grnd_level": 893
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.43,
+        "deg": 43,
+        "gust": 3.95
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1748440985,
+    "sys": {
+        "type": 2,
+        "id": 2019332,
+        "country": "BR",
+        "sunrise": 1748424663,
+        "sunset": 1748465241
+    },
+    "timezone": -10800,
+    "id": 3469058,
+    "name": "Brasília",
+    "cod": 200
+}

@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -60.025,
+        "lat": -3.1019
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "nuvens dispersas",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 30.27,
+        "feels_like": 35.7,
+        "temp_min": 28.28,
+        "temp_max": 30.27,
+        "pressure": 1016,
+        "humidity": 70,
+        "sea_level": 1016,
+        "grnd_level": 1011
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 260
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1748444679,
+    "sys": {
+        "type": 1,
+        "id": 8412,
+        "country": "BR",
+        "sunrise": 1748426334,
+        "sunset": 1748469376
+    },
+    "timezone": -14400,
+    "id": 3663517,
+    "name": "Manaus",
+    "cod": 200
+}

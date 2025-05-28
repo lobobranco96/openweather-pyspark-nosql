@@ -1,0 +1,48 @@
+{
+    "coord": {
+        "lon": -56.0967,
+        "lat": -15.5961
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "chuva fraca",
+            "icon": "10d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 18.96,
+        "feels_like": 19.52,
+        "temp_min": 18.96,
+        "temp_max": 18.96,
+        "pressure": 1020,
+        "humidity": 100,
+        "sea_level": 1020,
+        "grnd_level": 998
+    },
+    "visibility": 4000,
+    "wind": {
+        "speed": 7.2,
+        "deg": 150
+    },
+    "rain": {
+        "1h": 0.37
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1748448279,
+    "sys": {
+        "type": 1,
+        "id": 8352,
+        "country": "BR",
+        "sunrise": 1748426605,
+        "sunset": 1748467219
+    },
+    "timezone": -14400,
+    "id": 3465038,
+    "name": "Cuiabá",
+    "cod": 200
+}

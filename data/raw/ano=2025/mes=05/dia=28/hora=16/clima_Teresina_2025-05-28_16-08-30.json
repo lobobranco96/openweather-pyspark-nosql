@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -42.8019,
+        "lat": -5.0892
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "nuvens dispersas",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 31.84,
+        "feels_like": 34.31,
+        "temp_min": 31.84,
+        "temp_max": 31.84,
+        "pressure": 1012,
+        "humidity": 51,
+        "sea_level": 1012,
+        "grnd_level": 1000
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 120
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1748448477,
+    "sys": {
+        "type": 1,
+        "id": 8447,
+        "country": "BR",
+        "sunrise": 1748422389,
+        "sunset": 1748465053
+    },
+    "timezone": -10800,
+    "id": 3386496,
+    "name": "Teresina",
+    "cod": 200
+}

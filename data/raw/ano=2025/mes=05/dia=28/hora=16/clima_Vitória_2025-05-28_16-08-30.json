@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -40.3378,
+        "lat": -20.3194
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "nuvens quebradas",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 24.92,
+        "feels_like": 25.63,
+        "temp_min": 24.92,
+        "temp_max": 24.92,
+        "pressure": 1019,
+        "humidity": 83,
+        "sea_level": 1019,
+        "grnd_level": 1013
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 10
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1748448448,
+    "sys": {
+        "type": 1,
+        "id": 8474,
+        "country": "BR",
+        "sunrise": 1748423313,
+        "sunset": 1748462946
+    },
+    "timezone": -10800,
+    "id": 3444924,
+    "name": "Vitória",
+    "cod": 200
+}

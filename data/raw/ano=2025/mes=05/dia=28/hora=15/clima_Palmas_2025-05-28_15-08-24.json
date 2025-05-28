@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -48.3603,
+        "lat": -10.2128
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "céu limpo",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 31.93,
+        "feels_like": 32.18,
+        "temp_min": 31.93,
+        "temp_max": 31.93,
+        "pressure": 1015,
+        "humidity": 40,
+        "sea_level": 1015,
+        "grnd_level": 980
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 110
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1748444774,
+    "sys": {
+        "type": 1,
+        "id": 8419,
+        "country": "BR",
+        "sunrise": 1748424214,
+        "sunset": 1748465896
+    },
+    "timezone": -10800,
+    "id": 3474574,
+    "name": "Palmas",
+    "cod": 200
+}
