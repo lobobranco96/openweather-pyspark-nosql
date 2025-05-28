@@ -57,8 +57,8 @@ with DAG(
             'Porto Alegre,BR', 'Porto Velho,BR', 'Boa Vista,BR', 'Florianópolis,BR',
             'São Paulo,BR', 'Aracaju,BR', 'Palmas,BR'
         ]
-
-        coletor = ColetorWeather(cidades)
+        API_KEY = os.getenv("API_KEY")
+        coletor = ColetorWeather(cidades, API_KEY)
         dados = coletor.coletar()
         data_path = coletor.salvar_jsons(dados)
         return data_path

@@ -1,0 +1,51 @@
+{
+    "coord": {
+        "lon": -54.6464,
+        "lat": -20.4428
+    },
+    "weather": [
+        {
+            "id": 300,
+            "main": "Drizzle",
+            "description": "chuvisco fraco",
+            "icon": "09d"
+        },
+        {
+            "id": 701,
+            "main": "Mist",
+            "description": "nevoeiro",
+            "icon": "50d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 17.75,
+        "feels_like": 18.19,
+        "temp_min": 17.75,
+        "temp_max": 17.75,
+        "pressure": 1018,
+        "humidity": 100,
+        "sea_level": 1018,
+        "grnd_level": 954
+    },
+    "visibility": 1000,
+    "wind": {
+        "speed": 1.03,
+        "deg": 0
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1748433907,
+    "sys": {
+        "type": 1,
+        "id": 8347,
+        "country": "BR",
+        "sunrise": 1748426761,
+        "sunset": 1748466367
+    },
+    "timezone": -14400,
+    "id": 3467747,
+    "name": "Campo Grande",
+    "cod": 200
+}

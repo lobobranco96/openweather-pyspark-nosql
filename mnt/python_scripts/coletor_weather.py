@@ -22,11 +22,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Carrega variáveis do arquivo .env
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
-
-
 class ColetorWeather:
     """
     Classe responsável por coletar dados meteorológicos da API OpenWeather
@@ -39,7 +34,7 @@ class ColetorWeather:
         base_path (str): Caminho base para salvar os arquivos JSON.
     """
 
-    def __init__(self, cidades):
+    def __init__(self, cidades, API_KEY):
         """
         Inicializa o ColetorWeather com a lista de cidades.
 

@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -38.5247,
+        "lat": -3.7227
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "céu limpo",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.07,
+        "feels_like": 30.67,
+        "temp_min": 28.07,
+        "temp_max": 29.01,
+        "pressure": 1017,
+        "humidity": 69,
+        "sea_level": 1017,
+        "grnd_level": 1014
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 7.2,
+        "deg": 150
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1748434064,
+    "sys": {
+        "type": 1,
+        "id": 8363,
+        "country": "BR",
+        "sunrise": 1748421232,
+        "sunset": 1748464156
+    },
+    "timezone": -10800,
+    "id": 6320062,
+    "name": "Fortaleza",
+    "cod": 200
+}

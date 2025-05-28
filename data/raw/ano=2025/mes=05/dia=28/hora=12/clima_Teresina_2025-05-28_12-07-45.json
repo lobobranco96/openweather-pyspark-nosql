@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -42.8019,
+        "lat": -5.0892
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "céu limpo",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 27.84,
+        "feels_like": 28.91,
+        "temp_min": 27.84,
+        "temp_max": 27.84,
+        "pressure": 1016,
+        "humidity": 57,
+        "sea_level": 1016,
+        "grnd_level": 1004
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 5.14,
+        "deg": 140
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1748433962,
+    "sys": {
+        "type": 1,
+        "id": 8447,
+        "country": "BR",
+        "sunrise": 1748422389,
+        "sunset": 1748465053
+    },
+    "timezone": -10800,
+    "id": 3386496,
+    "name": "Teresina",
+    "cod": 200
+}
