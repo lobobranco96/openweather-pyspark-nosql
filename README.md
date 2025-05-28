@@ -154,3 +154,9 @@ make down
 make build
 ```
 
+## Streamlit
+![img1](mnt/notebook/tests_streamlit/img/img1.jpg)
+![img2](mnt/notebook/tests_streamlit/img/img2.jpg)
+![img3](mnt/notebook/tests_streamlit/img/img3.jpg)
+![img4](mnt/notebook/tests_streamlit/img/img4.jpg)
+![img5](mnt/notebook/tests_streamlit/img/img5.jpg)
