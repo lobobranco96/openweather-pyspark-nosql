@@ -1,0 +1,46 @@
+{
+    "coord": {
+        "lon": -49.2908,
+        "lat": -25.504
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "nuvens quebradas",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 19.34,
+        "feels_like": 19.24,
+        "temp_min": 18.43,
+        "temp_max": 20.66,
+        "pressure": 1012,
+        "humidity": 73,
+        "sea_level": 1012,
+        "grnd_level": 911
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 10.29,
+        "deg": 320,
+        "gust": 15.43
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1748451895,
+    "sys": {
+        "type": 2,
+        "id": 67576,
+        "country": "BR",
+        "sunrise": 1748426038,
+        "sunset": 1748464519
+    },
+    "timezone": -10800,
+    "id": 6322752,
+    "name": "Curitiba",
+    "cod": 200
+}

@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -63.9039,
+        "lat": -8.7619
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "nuvens quebradas",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 31.03,
+        "feels_like": 37.68,
+        "temp_min": 31.03,
+        "temp_max": 31.03,
+        "pressure": 1014,
+        "humidity": 70,
+        "sea_level": 1014,
+        "grnd_level": 1003
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 1.03,
+        "deg": 0
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1748452011,
+    "sys": {
+        "type": 1,
+        "id": 8424,
+        "country": "BR",
+        "sunrise": 1748427805,
+        "sunset": 1748469767
+    },
+    "timezone": -14400,
+    "id": 3662762,
+    "name": "Porto Velho",
+    "cod": 200
+}

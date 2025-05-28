@@ -12,5 +12,5 @@ info.txt
 README.txt
 mnt/python/__pycache__/
 services/.env
-inicializador.txt
 .env
+mnt/notebook/tests_streamlit/.env
