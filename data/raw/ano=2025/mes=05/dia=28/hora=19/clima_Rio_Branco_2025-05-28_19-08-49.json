@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -67.81,
+        "lat": -9.9747
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "nuvens dispersas",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 33.34,
+        "feels_like": 38.6,
+        "temp_min": 33.34,
+        "temp_max": 33.34,
+        "pressure": 1013,
+        "humidity": 55,
+        "sea_level": 1013,
+        "grnd_level": 993
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 350
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1748459198,
+    "sys": {
+        "type": 1,
+        "id": 8425,
+        "country": "BR",
+        "sunrise": 1748428860,
+        "sunset": 1748470587
+    },
+    "timezone": -18000,
+    "id": 3662574,
+    "name": "Rio Branco",
+    "cod": 200
+}

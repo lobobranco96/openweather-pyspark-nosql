@@ -1,0 +1,48 @@
+{
+    "coord": {
+        "lon": -48.5012,
+        "lat": -27.6146
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "chuva fraca",
+            "icon": "10d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 23.54,
+        "feels_like": 23.83,
+        "temp_min": 22.57,
+        "temp_max": 24.24,
+        "pressure": 1007,
+        "humidity": 72,
+        "sea_level": 1007,
+        "grnd_level": 1003
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 350
+    },
+    "rain": {
+        "1h": 0.71
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1748459307,
+    "sys": {
+        "type": 2,
+        "id": 2084414,
+        "country": "BR",
+        "sunrise": 1748426098,
+        "sunset": 1748464080
+    },
+    "timezone": -10800,
+    "id": 6323121,
+    "name": "fpolis",
+    "cod": 200
+}

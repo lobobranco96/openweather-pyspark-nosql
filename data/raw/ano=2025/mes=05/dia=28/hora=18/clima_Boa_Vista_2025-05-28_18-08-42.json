@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -60.6733,
+        "lat": 2.8197
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "nuvens quebradas",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 25.99,
+        "feels_like": 25.99,
+        "temp_min": 25.99,
+        "temp_max": 25.99,
+        "pressure": 1015,
+        "humidity": 78,
+        "sea_level": 1015,
+        "grnd_level": 1005
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.6,
+        "deg": 60
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1748455722,
+    "sys": {
+        "type": 1,
+        "id": 8340,
+        "country": "BR",
+        "sunrise": 1748425929,
+        "sunset": 1748470092
+    },
+    "timezone": -14400,
+    "id": 3664980,
+    "name": "Boa Vista",
+    "cod": 200
+}

@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -35.7353,
+        "lat": -9.6658
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "céu pouco nublado",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.69,
+        "feels_like": 30.66,
+        "temp_min": 28.69,
+        "temp_max": 28.69,
+        "pressure": 1016,
+        "humidity": 61,
+        "sea_level": 1016,
+        "grnd_level": 1013
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1748459304,
+    "sys": {
+        "type": 1,
+        "id": 8413,
+        "country": "BR",
+        "sunrise": 1748421131,
+        "sunset": 1748462919
+    },
+    "timezone": -10800,
+    "id": 3395981,
+    "name": "Maceió",
+    "cod": 200
+}

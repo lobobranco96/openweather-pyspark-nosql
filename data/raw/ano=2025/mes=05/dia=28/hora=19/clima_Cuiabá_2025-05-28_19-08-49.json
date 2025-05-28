@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -56.0967,
+        "lat": -15.5961
+    },
+    "weather": [
+        {
+            "id": 300,
+            "main": "Drizzle",
+            "description": "chuvisco fraco",
+            "icon": "09d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 15.96,
+        "feels_like": 16.22,
+        "temp_min": 15.96,
+        "temp_max": 15.96,
+        "pressure": 1020,
+        "humidity": 100,
+        "sea_level": 1020,
+        "grnd_level": 998
+    },
+    "visibility": 6000,
+    "wind": {
+        "speed": 5.14,
+        "deg": 180
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1748459103,
+    "sys": {
+        "type": 1,
+        "id": 8352,
+        "country": "BR",
+        "sunrise": 1748426605,
+        "sunset": 1748467219
+    },
+    "timezone": -14400,
+    "id": 3465038,
+    "name": "Cuiabá",
+    "cod": 200
+}

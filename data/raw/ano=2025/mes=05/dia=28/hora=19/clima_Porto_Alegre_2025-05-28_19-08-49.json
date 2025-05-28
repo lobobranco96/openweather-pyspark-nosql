@@ -1,0 +1,48 @@
+{
+    "coord": {
+        "lon": -51.23,
+        "lat": -30.0331
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "chuva fraca",
+            "icon": "10d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 15.76,
+        "feels_like": 15.87,
+        "temp_min": 15.55,
+        "temp_max": 16.25,
+        "pressure": 1010,
+        "humidity": 95,
+        "sea_level": 1010,
+        "grnd_level": 1009
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.12,
+        "deg": 250
+    },
+    "rain": {
+        "1h": 0.27
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1748459326,
+    "sys": {
+        "type": 2,
+        "id": 2021802,
+        "country": "BR",
+        "sunrise": 1748427052,
+        "sunset": 1748464436
+    },
+    "timezone": -10800,
+    "id": 3452925,
+    "name": "Porto Alegre",
+    "cod": 200
+}
